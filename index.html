@@ -4,8 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
+    <style>
+        body {
+            background-color: white;
+            background-image: url(img/background.png);
+        }
+        .name {
+            margin-top: 50px;
+            font-family: monaco;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .degree {
+            margin-top: 30px;
+            font-family: monaco;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .block {
+            background-color: black;
+            inline-size: 100px;
+            margin-left: 670px;
+            font-size: xx-small;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-right: 30px;
+        }
+        .Home {
+            display: block;
+            padding: 8px;
+            padding-left: 90px;
+            background-color: aqua;
+            padding-right: 120px;
+            font-weight: bold;
+        }
+        .Contacts {
+            display: block;
+            padding: 8px;
+            padding-left: 100px;
+            background-color: palegoldenrod;
+            padding-right: 140px;
+            font-weight: bold;
+        }
+        .Educations {
+            display: block;
+            padding: 8px;
+            padding-left: 100px;
+            background-color: salmon;
+            padding-right: 120px;
+            font-weight: bold;
+        }
+        .Experiences {
+            display: block;
+            padding: 8px;
+            padding-left: 50px;
+            background-color: rgb(23, 186, 186);
+            padding-right: 90px;
+            font-weight: bold;
+        }
+        a {
+            margin-left: 50px;
+            background-color: inherit;
+            text-decoration: none;
+            font-family: monaco;
+            color: aliceblue;
+        }
+        li {
+            text-align: center;
+            margin-right: 50px;
+            margin-left: -25px;
+        }
+        .pp {
+            border-radius: 50%;
+            margin-left: 38px;
+            margin-top: 30px;
+            
+        }
+        .border {
+            width: 300px;
+            height: 290px;
+            border: 3px solid #ccc;
+            background: #ccc;
+            margin: auto;
+            padding: 15px 10px;
+            border-radius: 50%;
+            margin-top: 90px;
+        }
+        .container {
+            margin-top: 20px;
+            border-radius: 40%;
+        }
+        .display-1 {
+            font-family: monaco;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+        .display-2 {
+            font-family: monaco;
+            text-align: right;
+            padding-bottom: 20px;
+        }
+        .paragraf {
+            font-family: monaco;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Muhamad Fariz Warman</h1>
+    <!-- Navbar -->
+    <ul>
+        <li class="Home"><a href="#">Summary</a></li>
+        <li class="Contacts"><a href="#">Contacts</a></li>
+        <li class="Educations"><a href="#">Educations</a></li>
+        <li class="Experiences"><a href="#">Experiences</a></li>
+    </ul>
+
+    <!-- Foto -->
+    <div class="border">
+        <img src="img/picture.jpg" alt="Profile Picture" width="200" height="200" class="pp">
+        </div>
+
+    <!-- HEADING -->
+    <h1 class="name">Muhamad Fariz Warman</h1>
+    <div class="block">-</div>
+    <p class="degree">[ Political Science Degree / Web Development ]</p>
+
+    <!-- Quotes -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-1">"</h2>
+            <p class="paragraf">
+                I'm an observer who spends my time finding out ways about how to improve things in my surroundings. By emphasizing the value of teamwork, I could get better understanding to then solve and organizing things to get the reliable objective of the company that I worked on.
+            </p>
+            <h1 class="display-2">"</h2>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
