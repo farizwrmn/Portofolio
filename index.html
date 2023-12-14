@@ -93,6 +93,11 @@
             font-family: monaco;
             text-align: center;
         }
+        canvas {
+            border: 1px solid black;
+            margin-left: 150px;
+            margin-top: 80px;
+        }
     </style>
 </head>
 <body>
@@ -125,6 +130,9 @@
         </div>
     </div>
 
+    <!-- Self Summary -->
+    <canvas id="myCanvas" width="500" height="500" class="canvas"></canvas>
+
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -133,6 +141,14 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Javascript canvas -->
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Summary", 10, 50);
+    </script>
 
 </body>
 </html>
