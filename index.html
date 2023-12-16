@@ -17,7 +17,6 @@
         body {
             background-color: white;
             background-image: url(img/background.png);
-            margin: 0;
             width: 100vw;
             height: 100vh;
             max-width: fit-content;
@@ -37,42 +36,33 @@
         ul {
             list-style-type: none;
             display: flex;
-            margin-right: 30px;
+            float: right;
         }
         .Home {
             display: block;
             padding: 8px;
-            padding-left: 90px;
             background-color: aqua;
-            padding-right: 120px;
             font-weight: bold;
         }
         .Contacts {
             display: block;
             padding: 8px;
-            padding-left: 100px;
             background-color: palegoldenrod;
-            padding-right: 140px;
             font-weight: bold;
         }
         .Educations {
             display: block;
             padding: 8px;
-            padding-left: 100px;
             background-color: salmon;
-            padding-right: 120px;
             font-weight: bold;
         }
         .Experiences {
             display: block;
             padding: 8px;
-            padding-left: 50px;
             background-color: rgb(23, 186, 186);
-            padding-right: 90px;
             font-weight: bold;
         }
         a {
-            margin-left: 50px;
             background-color: inherit;
             text-decoration: none;
             font-family: monaco;
@@ -80,14 +70,12 @@
         }
         li {
             text-align: center;
-            margin-right: 50px;
-            margin-left: -25px;
+            margin: auto;
         }
         .pp {
             border-radius: 50%;
-            margin-left: auto;
-            margin-top: auto;
-            display: block;
+            margin-top: 50px;
+            display: inline-block;
         }
         .container {
             margin-top: 20px;
@@ -118,8 +106,8 @@
                 width: 100%;
                 height: 100%;
             }
-            .border {
-                width: 100%;
+            .navbar-brand {
+                margin-right: 500px;
             }
         }
     </style>
@@ -136,7 +124,7 @@
     </ul>
     </div>
     <!-- Foto & degree -->
-    <div class="border">
+    <div class="border" style="text-align: center;">
         <img src="img/picture.jpg" alt="Profile Picture" width="250" height="250" class="pp">
         <h1 class="name">Muhamad Fariz Warman</h1>
         <p class="degree">[ Political Science Degree / Web Development ]</p>
