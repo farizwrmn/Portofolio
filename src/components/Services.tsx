@@ -40,7 +40,7 @@ const Services = () => {
         <h1 className="text-3xl text-center text-blue-950 tracking-tighter">
           These are the services I provide the most
         </h1>
-        <img
+        <Image
           src="/assets/svg/arrow.svg"
           alt="down-arrow"
           width={50}

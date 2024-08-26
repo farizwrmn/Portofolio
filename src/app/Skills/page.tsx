@@ -12,7 +12,7 @@ import usePrefersReducedMotion from "@/hooks/ReducedMotion";
 import Bounded from "@/components/Bounded";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const ProData = {
     labels: ["HTML", "CSS", "Typescript", "JavaScript"],
     datasets: [
@@ -121,4 +121,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

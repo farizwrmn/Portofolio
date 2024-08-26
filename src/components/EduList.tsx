@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -13,11 +14,6 @@ const EduList = () => {
       </div>
       <div></div>
       <div>
-        <img
-          src="/assets/svg/bootcamp.svg"
-          alt="final-project"
-          className="rounded-xl shadow-xl lg:p-60"
-        />
         <p className="text-slate-400 text-center italic mt-20 tracking-tighter mb-5">
           Purwadhika Full Stack Developer Bootcamp
         </p>
@@ -25,8 +21,8 @@ const EduList = () => {
           Jan, 2024 - Present
         </h3>
         <p className="tracking-tighter text-center font-light lg:mb-10">
-          Learn basic coding from Javascript's logic to Front End and Back End
-          using the latest curriculum that industry needs nowadays.
+          Learn basic coding from Javascript&apos;s logic to Front End and Back
+          End using the latest curriculum that industry needs nowadays.
         </p>
       </div>
       <div>
@@ -44,10 +40,17 @@ const EduList = () => {
         <p className="tracking-tighter text-center font-light lg:mb-10 mb-5">
           During my studies, I had a high interest in International Economics
           courses, therefore I used creative economy of the Industry era 4.0 as
-          my thesis with the title "The Role of the Creative Economy as a tool
-          for Indonesian Public Diplomacy (Through the World Conference on
-          Creative Economy program).
+          my thesis with the title &quot;The Role of the Creative Economy as a
+          tool for Indonesian Public Diplomacy (Through the World Conference on
+          Creative Economy program)&quot;.
         </p>
+        <Image
+          src="/assets/svg/bootcamp.svg"
+          alt="final-project"
+          className="rounded-xl"
+          width={500}
+          height={400}
+        />
         <h3 className="text-blue-950 mt-5 text-center p-5">________________</h3>
       </div>
     </>

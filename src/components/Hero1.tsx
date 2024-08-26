@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero1 = () => {
@@ -8,7 +9,12 @@ const Hero1 = () => {
         with creative yet simple web design and development!
       </h3>
       <div className="xl:flex xl:justify-center xl:w-80 xl:h-300">
-        <img src="/assets/images/boost.svg" alt="business" />
+        <Image
+          src="/assets/images/boost.svg"
+          alt="business"
+          height={300}
+          width={300}
+        />
       </div>
     </div>
   );
