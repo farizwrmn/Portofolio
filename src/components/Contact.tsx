@@ -21,7 +21,7 @@ const contacts = [
     desc: "Visit LinkedIn Page",
   },
   {
-    link: "https://wa.me/081298606155?text=Hello%20Fariz,%20I%20am%20interested%20in%20your%20services",
+    link: "https://wa.me/+6281298606155?text=Hello%20Fariz,%20I%20am%20interested%20in%20your%20services",
     image: "/assets/svg/whatsapp.svg",
     desc: "Send Message",
   },
