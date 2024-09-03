@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 -mt-10">
       <h1 className="text-4xl font-bold mb-6 font-dirtyline">contact me</h1>
-      <div className="bg-white shadow-md rounded-lg p-8 max-w-lg w-full">
+      <div className="">
         <p className="text-lg mb-4 text-center font-mono tracking-tighter">
           Feel free to reach out to me through any of the platforms below:
         </p>

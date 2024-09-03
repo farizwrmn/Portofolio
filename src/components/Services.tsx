@@ -59,7 +59,7 @@ const Services = () => {
                 • {title} •
               </li>
               <div className="flex justify-center">
-                <Link href={link}>
+                <Link href={link} target="_blank">
                   <Image
                     src={image}
                     alt="image"
