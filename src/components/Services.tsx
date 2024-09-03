@@ -23,7 +23,7 @@ const Services = () => {
     {
       id: 3,
       title: "Company Profile",
-      link: "Company Profile",
+      link: "https://company-profile-pi.vercel.app",
       image: "/assets/images/compro.gif",
       desc: "Web based Company Profile made with Typescript, Next.js, Chakra UI, Axios and React Slick.",
     },
