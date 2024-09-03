@@ -6,21 +6,25 @@ import React, { useState } from "react";
 
 const contacts = [
   {
+    id: 1,
     link: "mailto:farizwarman@gmail.com",
     image: "/assets/svg/gmail.svg",
     desc: "Send Email",
   },
   {
+    id: 2,
     link: "https://github.com/farizwrmn",
     image: "/assets/svg/github.svg",
     desc: "See Github Profile",
   },
   {
+    id: 3,
     link: "https://bit.ly/mfarizw",
     image: "/assets/svg/linkedin.svg",
     desc: "Visit LinkedIn Page",
   },
   {
+    id: 4,
     link: "https://wa.me/+6281298606155?text=Hello%20Fariz,%20I%20am%20interested%20in%20your%20services",
     image: "/assets/svg/whatsapp.svg",
     desc: "Send Message",
@@ -28,7 +32,7 @@ const contacts = [
 ];
 
 const Contact = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState<number | null>(null);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 -mt-10">
@@ -39,15 +43,15 @@ const Contact = () => {
         </p>
         <ul className="list-none text-center flex mt-10 justify-between">
           {contacts.map((contact) => (
-            <li key={contact.link}>
+            <li key={contact.id}>
               <Link
                 href={contact.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
+                  onMouseEnter={() => setIsHovered(contact.id)}
+                  onMouseLeave={() => setIsHovered(null)}
                   className="relative inline-block"
                 >
                   <Image
@@ -57,7 +61,7 @@ const Contact = () => {
                     height={50}
                     className="inline mr-2 hover:transition-all hover:scale-110"
                   />
-                  {isHovered && (
+                  {isHovered == contact.id && (
                     <div className="absolute top-12 left-1/2 transform -translate-x-1/2 bg-white text-black p-2 rounded shadow-lg mt-2">
                       {contact.desc}
                     </div>
