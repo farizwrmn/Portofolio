@@ -16,6 +16,14 @@ body {
   background-image: url("../../public/assets/images/bg-grid.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+  }
 }
