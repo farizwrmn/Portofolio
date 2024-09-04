@@ -44,13 +44,15 @@ const EduList = () => {
           tool for Indonesian Public Diplomacy (Through the World Conference on
           Creative Economy program)&quot;.
         </p>
-        <Image
-          src="/assets/svg/bootcamp.svg"
-          alt="final-project"
-          className="rounded-xl"
-          width={500}
-          height={400}
-        />
+        <div className="flex justify-center">
+          <Image
+            src="/assets/svg/bootcamp.svg"
+            alt="final-project"
+            className="rounded-xl text-center flex justify-center"
+            width={500}
+            height={400}
+          />
+        </div>
         <h3 className="text-blue-950 mt-5 text-center p-5">________________</h3>
       </div>
     </>

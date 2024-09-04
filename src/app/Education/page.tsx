@@ -5,8 +5,8 @@ import React from "react";
 
 const Page = () => {
   return (
-    <Bounded className="bg-gradient-to-tr from-yellow-100 via-slate-100 to-white w-full">
-      <div className="bg-gradient-to-tr from-yellow-100 via-slate-100 to-white h-1/2 w-full">
+    <Bounded>
+      <div className="bg-white/10 backdrop-blur-sm border border-slate-200/20 rounded-lg w-full">
         <Navbar />
         <EduList />
       </div>

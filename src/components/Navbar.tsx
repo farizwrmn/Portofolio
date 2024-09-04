@@ -24,7 +24,6 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center w-full h-30 px-10 relative">
-        <StarGrid />
         <div className="items-center m-auto">
           <Link href="/">
             <h1 className="text-4xl tracking-tight lg:text-5xl font-dirtyline text-center -mt-7 text-blue-950 hero__body">

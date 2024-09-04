@@ -93,9 +93,9 @@ const Page = () => {
     { scope: container }
   );
   return (
-    <Bounded className="bg-gradient-to-tr from-yellow-100 via-slate-100 to-white w-full">
+    <Bounded>
       <div
-        className="bg-gradient-to-tr from-yellow-100 via-slate-100 to-white h-1/2 w-full"
+        className="bg-white/10 backdrop-blur-sm border border-slate-200/20 rounded-lg w-full"
         ref={container}
       >
         <Navbar />

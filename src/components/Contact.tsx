@@ -47,27 +47,27 @@ const Contact = () => {
       const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 
       gsap.to(".mail ", {
-        repeat: 1,
+        repeat: 0,
         yoyo: true,
         duration: 2,
         rotationY: 360,
       });
       gsap.to(".github ", {
-        repeat: 1,
+        repeat: 0,
         yoyo: true,
         duration: 2,
         rotationY: 360,
         delay: 0.5,
       });
       gsap.to(".linkedin ", {
-        repeat: 1,
+        repeat: 0,
         yoyo: true,
         duration: 2,
         rotationY: 360,
         delay: 1,
       });
       gsap.to(".whatsapp ", {
-        repeat: 1,
+        repeat: 0,
         yoyo: true,
         duration: 2,
         rotationY: 360,
@@ -79,11 +79,11 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen p-4 -mt-10"
+      className="flex flex-col items-center justify-center p-4 mt-10 left-0 right-0 top-0 bottom-0"
       ref={container}
     >
       <h1 className="text-4xl font-bold mb-6 font-dirtyline">contact me</h1>
-      <div className="">
+      <div>
         <p className="text-lg mb-4 text-center font-mono tracking-tighter">
           Feel free to reach out to me through any of the platforms below:
         </p>

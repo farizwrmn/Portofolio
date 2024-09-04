@@ -6,26 +6,15 @@ import Services from "@/components/Services";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-import usePrefersReducedMotion from "../hooks/ReducedMotion";
 import Bounded from "@/components/Bounded";
+import StarGrid from "@/components/ui/StarGrid";
 
 export default function Home() {
   const container = useRef(null);
-  const reduceMotion = usePrefersReducedMotion();
   gsap.registerPlugin(useGSAP);
 
   useGSAP(
     () => {
-      // if (reduceMotion) {
-      //   gsap.set(
-      //     ".hero__body, .hero__heading, .hero__heading1, .hero__heading2, .navbar__link, .arrow",
-      //     {
-      //       opacity: 1,
-      //     }
-      //   );
-      //   return;
-      // }
-
       const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 
       tl.fromTo(
@@ -54,11 +43,12 @@ export default function Home() {
     { scope: container }
   );
   return (
-    <Bounded className="bg-gradient-to-tr from-yellow-100 via-slate-100 to-white">
+    <Bounded>
       <div
-        className="bg-gradient-to-tr from-yellow-100 via-slate-100 to-white h-1/2"
+        className="relative -inset-[2px] rounded-3xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-sm"
         ref={container}
       >
+        <StarGrid />
         <Navbar />
         <Hero />
         <h3 className="text-blue-950 mt-5">________________</h3>

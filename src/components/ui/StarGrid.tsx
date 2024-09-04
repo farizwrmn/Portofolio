@@ -1,14 +1,40 @@
-// src/components/StarGrid.tsx
+import { useState, useEffect } from "react";
 
 export default function StarGrid() {
-  const grid = [14, 30] as const;
+  const [grid, setGrid] = useState<[number, number]>([220, 130]);
+
+  // Function to update the grid based on screen size
+  const updateGrid = () => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth > 1024) {
+      // Large screens (e.g., desktops)
+      setGrid([220, 130]);
+    } else {
+      // Small screens (e.g., tablets, phones)
+      setGrid([320, 60]);
+    }
+  };
+
+  useEffect(() => {
+    // Initial grid size determination
+    updateGrid();
+
+    // Update grid size when the window is resized
+    window.addEventListener("resize", updateGrid);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", updateGrid);
+    };
+  }, []);
 
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 935 425"
-      className="absolute h-fit w-fit"
+      viewBox={`0 0 ${grid[1] * 32} ${grid[0] * 32}`}
+      className="absolute h-full w-full -z-10"
       id="star-grid"
       opacity={100}
       style={{
@@ -20,7 +46,7 @@ export default function StarGrid() {
           return [...Array(grid[1])].map((_, j) => {
             return (
               <path
-                key={i + j}
+                key={`${i}-${j}`}
                 fill="currentColor"
                 opacity="100"
                 className="star-grid-item"
