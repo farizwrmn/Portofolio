@@ -11,3 +11,11 @@
   @apply absolute -inset-[2px] -z-10 rounded-full border border-slate-100/20 bg-slate-200/10 backdrop-blur-sm;
   content: "";
 }
+
+body {
+  background-image: url("../../public/assets/images/bg-grid.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}

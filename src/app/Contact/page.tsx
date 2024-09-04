@@ -7,7 +7,7 @@ import React from "react";
 const Page = () => {
   return (
     <Bounded>
-      <div className="w-full">
+      <div className="w-full -inset-[10px] rounded-3xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-sm min-h-screen">
         <Navbar />
         <div className="flex justify-start m-5">
           <Link href="/">

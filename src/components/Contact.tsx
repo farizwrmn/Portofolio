@@ -79,7 +79,7 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center p-4 mt-10 left-0 right-0 top-0 bottom-0"
+      className="flex flex-col items-center justify-center p-4 mt-10 inset-20 z-50 absolute top-0 right-0 bottom-0 left-0"
       ref={container}
     >
       <h1 className="text-4xl font-bold mb-6 font-dirtyline">contact me</h1>
@@ -105,9 +105,9 @@ const Contact = () => {
                     alt="image"
                     width={50}
                     height={50}
-                    className={`inline mr-2 hover:transition-all hover:scale-110 ${contact.class}`}
+                    className={` ${contact.class}`}
                   />
-                  {isHovered == contact.id && (
+                  {isHovered === contact.id && (
                     <div className="absolute top-12 left-1/2 transform -translate-x-1/2 bg-white text-black p-2 rounded shadow-lg mt-2">
                       {contact.desc}
                     </div>

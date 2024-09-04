@@ -48,7 +48,6 @@ export default function Home() {
         className="relative -inset-[2px] rounded-3xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-sm"
         ref={container}
       >
-        <StarGrid />
         <Navbar />
         <Hero />
         <h3 className="text-blue-950 mt-5">________________</h3>
