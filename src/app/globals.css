@@ -16,6 +16,6 @@ body {
   background-image: url("../../public/assets/images/bg-grid.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
 }

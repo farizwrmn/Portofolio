@@ -82,7 +82,7 @@ const Contact = () => {
       className="flex flex-col items-center justify-center p-4 mt-10 inset-20 z-50 absolute align-center"
       ref={container}
     >
-      <h1 className="text-3xl font-bold mb-6 font-dirtyline">contact me</h1>
+      <h1 className="text-2xl font-bold mb-3 font-dirtyline">contact me</h1>
       <div>
         <p className="text-lg mb-4 text-center font-mono tracking-tighter">
           Feel free to reach out to me through any of the platforms below:
