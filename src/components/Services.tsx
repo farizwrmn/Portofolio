@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <>
       <div className="m-5">
-        <h3 className="text-blue-950 xl:text-center font-dirtyline">
+        <h3 className="text-blue-950 xl:text-center font-dirtyline xl:text-2xl">
           Services
         </h3>
       </div>

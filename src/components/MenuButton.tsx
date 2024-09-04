@@ -21,7 +21,7 @@ type Props = {
 const Menu = ({ link }: Props) => {
   return (
     <Popover>
-      <PopoverTrigger className="fixed right-10 transition hover:scale-105 bg-gradient-to-t from-blue-500 to-white p-4 rounded-full mt-10 xl:m-auto data-[state=open]:zoom-in-120 border-b-4 text-sm">
+      <PopoverTrigger className="fixed right-10 transition hover:scale-105 bg-gradient-to-t from-blue-500 to-white p-4 rounded-full mt-10 xl:m-auto data-[state=open]:zoom-in-120 border-b-4 text-sm z-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -38,7 +38,7 @@ const Menu = ({ link }: Props) => {
         </svg>
       </PopoverTrigger>
       <PopoverContent className="min-w-[400px] min-h-[1280px]">
-        <PopoverClose className="fixed right-16 mt-20 hover:scale-110 bg-gradient-to-tr from-yellow-200 blue-500 to-white p-4 rounded-full">
+        <PopoverClose className="fixed right-16 mt-20 hover:scale-110 bg-white p-4 rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

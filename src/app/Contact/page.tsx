@@ -9,7 +9,7 @@ const Page = () => {
     <Bounded>
       <div className="w-full -inset-[10px] rounded-3xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-sm min-h-screen">
         <Navbar />
-        <div className="flex justify-start m-5">
+        <div className="flex justify-start m-3 absolute inset-4 xl:pt-30 pt-20 xl:ml-44">
           <Link href="/">
             <p className="text-blue-400 tracking-tighter">Home</p>
           </Link>
