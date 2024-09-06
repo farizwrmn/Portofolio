@@ -37,7 +37,7 @@ const Menu = ({ link }: Props) => {
           />
         </svg>
       </PopoverTrigger>
-      <PopoverContent className="min-w-[360px] min-h-[1280px]">
+      <PopoverContent className="w-[385px] min-h-[1280px]">
         <PopoverClose className="fixed right-16 mt-20 hover:scale-110 bg-white p-4 rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
