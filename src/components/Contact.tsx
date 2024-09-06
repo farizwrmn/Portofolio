@@ -79,41 +79,45 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center p-4 mt-10 inset-20 z-50 absolute align-center"
+      className="flex flex-col items-center justify-center mt-10 inset-20 z-50 absolute align-center"
       ref={container}
     >
       <h1 className="text-2xl font-bold mb-3 font-dirtyline">contact me</h1>
       <div>
         <p className="text-lg mb-4 text-center font-mono tracking-tighter">
-          Feel free to reach out to me through any of the platforms below:
+          Feel free to reach out to me by clicking any of the platforms below:
         </p>
         <ul className="list-none text-center flex mt-10 justify-between gap-4">
           {contacts.map((contact) => (
             <li key={contact.id}>
-              <Link
-                href={contact.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
+                onClick={() =>
+                  setIsHovered(contact.id === isHovered ? null : contact.id)
+                }
+                className="relative inline-block cursor-pointer"
               >
-                <div
-                  onMouseEnter={() => setIsHovered(contact.id)}
-                  onMouseLeave={() => setIsHovered(null)}
-                  className="relative inline-block"
-                >
-                  <Image
-                    src={contact.image}
-                    alt="image"
-                    width={50}
-                    height={50}
-                    className={` ${contact.class}`}
-                  />
-                  {isHovered === contact.id && (
-                    <div className="absolute top-12 left-1/2 transform -translate-x-1/2 bg-white text-black p-2 rounded shadow-lg mt-2">
+                <Image
+                  src={contact.image}
+                  alt="image"
+                  width={50}
+                  height={50}
+                  className={`${contact.class}`}
+                />
+                {isHovered === contact.id && (
+                  <button
+                    className={`absolute top-12 left-1/2 transform -translate-x-1/2 text-black p-2 mt-2 tracking-tighter rounded-2xl shadow-2xl `}
+                  >
+                    <Link
+                      href={contact.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`font-bold font-mono bg-transparent`}
+                    >
                       {contact.desc}
-                    </div>
-                  )}
-                </div>
-              </Link>
+                    </Link>
+                  </button>
+                )}
+              </div>
             </li>
           ))}
         </ul>
