@@ -8,20 +8,27 @@ const Services = () => {
   const service = [
     {
       id: 1,
+      title: "3d Website",
+      link: "http://3d-soda-can-gilt.vercel.app/",
+      image: "/assets/images/soda-can.gif",
+      desc: "3D website with moving 3D assets of the products. I made this using Typescript, Next.JS, Tailwind CSS, Prismic, Three.JS, Figma and GSAP",
+    },
+    {
+      id: 2,
       title: "Web Development",
       link: "https://event-management-platform-jcwdol013-01.vercel.app",
       image: "/assets/images/minpro.gif",
       desc: "Event Management Website made with Typescript, Next.js, Tailwind CSS, Clerk, Uploadthing and MongoDB.",
     },
     {
-      id: 2,
+      id: 3,
       title: "E-commerce",
       link: "https://jcwdol130201.purwadhikabootcamp.com",
       image: "/assets/images/e-commerce.gif",
       desc: "E-Groceries for Final Project at Purwadhika Bootcamp made with Typescript, Next.js, Chakra UI, Multer, Nodemailer, Formik and Yup, Axios, React Slick, Chart.js, MySQL, JWT, Express, Xendit, Rajaongkir API and Prisma. ",
     },
     {
-      id: 3,
+      id: 4,
       title: "Company Profile",
       link: "https://company-profile-pi.vercel.app",
       image: "/assets/images/compro.gif",
