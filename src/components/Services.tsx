@@ -34,6 +34,13 @@ const Services = () => {
       image: "/assets/images/compro.gif",
       desc: "Web based Company Profile made with Typescript, Next.js, Chakra UI, Axios and React Slick.",
     },
+    {
+      id: 5,
+      title: "Invoice Management Web App",
+      link: "https://github.com/farizwrmn/invoeasy",
+      image: "/assets/images/invoeasy.gif",
+      desc: "Invoice management app for 2nd Final Project at Purwadhika Bootcamp made with Typescript, Next.js, Tailwind CSS, Nodemailer, Formik and Yup, Axios, MySQL, JWT, Express, and Prisma.",
+    },
   ];
 
   return (
