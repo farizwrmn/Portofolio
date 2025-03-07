@@ -41,6 +41,20 @@ const Services = () => {
       image: "/assets/images/invoeasy.gif",
       desc: "Invoice management app for 2nd Final Project at Purwadhika Bootcamp made with Typescript, Next.js, Tailwind CSS, Nodemailer, Formik and Yup, Axios, MySQL, JWT, Express, and Prisma.",
     },
+    // {
+    //   id: 6,
+    //   title: "Point of Sale Desktop App",
+    //   link: "/",
+    //   image: "/assets/images/POS.gif",
+    //   desc: "Cashier app for payment, inserting products with customer views. I'm part of the Front End team at K3Mart which made this app, we use Electron for Desktop based app, TypeScript, AntDesign, Axios, Redux, and PouchDB",
+    // },
+    {
+      id: 6,
+      title: "Payment Point Online Bank Web App",
+      link: "http://nutech-reactjs-redux.vercel.app/",
+      image: "/assets/images/nutech.gif",
+      desc: "This is a take home test for a Front End Developer gig at a software company in Indonesia. I made this app with Typescript, React, NextJS, Tailwind CSS, Redux and Axios",
+    },
   ];
 
   return (
