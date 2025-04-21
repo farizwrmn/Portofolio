@@ -14,11 +14,11 @@ const EduList = () => {
       </div>
       <div></div>
       <div>
-        <p className="text-slate-400 text-center italic mt-20 tracking-tighter mb-5">
+        <p className="text-slate-700 text-center italic mt-20 tracking-tighter mb-5">
           Purwadhika Full Stack Developer Bootcamp
         </p>
         <h3 className="mt-5 text-center font-bold tracking-tighter">
-          Jan, 2024 - Present
+          Jan, 2024 - Sep, 2024
         </h3>
         <p className="tracking-tighter text-center font-light lg:mb-10">
           Learn basic coding from Javascript&apos;s logic to Front End and Back
@@ -29,7 +29,7 @@ const EduList = () => {
         <h3 className="text-blue-950 text-center p-5">↑</h3>
       </div>
       <div>
-        <p className="text-slate-400 text-center italic tracking-tighter mb-5">
+        <p className="text-slate-700 text-center italic tracking-tighter mb-5">
           International Relation at University of Al Azhar Indonesia
         </p>
       </div>

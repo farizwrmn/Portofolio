@@ -17,6 +17,10 @@ const Navbar = () => {
     },
     {
       id: 3,
+      link: "Experiences",
+    },
+    {
+      id: 4,
       link: "Contact",
     },
   ];
