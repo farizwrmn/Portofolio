@@ -3,9 +3,10 @@
 import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 const Services = () => {
+  const [loading, setLoading] = useState(true);
   const service = [
     {
       id: 1,
@@ -93,8 +94,13 @@ const Services = () => {
               >
                 • {title} •
               </li>
-              <div className="flex justify-center">
-                <Link href={link} target="_blank">
+              <div className="relative flex justify-center w-full">
+                {loading && (
+                  <div className="absolute inset-0 flex justify-center items-center z-10 rounded-xl">
+                    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-900" />
+                  </div>
+                )}
+                <Link href={link} target="_blank" className="z-0">
                   <Image
                     src={image}
                     alt="image"
@@ -102,6 +108,7 @@ const Services = () => {
                     height={500}
                     className="rounded-xl"
                     unoptimized
+                    onLoadingComplete={() => setLoading(false)}
                   />
                 </Link>
               </div>
