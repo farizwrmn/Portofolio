@@ -7,7 +7,7 @@ import {
 import { PopoverClose } from "@radix-ui/react-popover";
 import Link from "next/link";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 type Link = {
   id: number;
@@ -19,8 +19,20 @@ type Props = {
 };
 
 const Menu = ({ link }: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isOpen]);
+
   return (
-    <Popover>
+    <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger className="fixed right-10 transition hover:scale-105 bg-gradient-to-t from-blue-500 to-white p-4 rounded-full mt-10 xl:m-auto data-[state=open]:zoom-in-120 border-b-4 text-sm z-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
