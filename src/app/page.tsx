@@ -7,7 +7,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import Bounded from "@/components/Bounded";
-import StarGrid from "@/components/ui/StarGrid";
 
 export default function Home() {
   const container = useRef(null);
@@ -15,45 +14,38 @@ export default function Home() {
 
   useGSAP(
     () => {
-      const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+      const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
       tl.fromTo(
-        ".hero__heading",
-        { scale: 0.5 },
-        { scale: 1, opacity: 1, duration: 1 }
+        [".hero__tagline", ".hero__title", ".hero__summary"],
+        { y: 24, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, stagger: 0.15 }
       );
       tl.fromTo(
-        ".hero__heading1",
-        { scale: 0.5 },
-        { scale: 1, opacity: 1, duration: 1 }
+        ".hero__cta a",
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 },
+        "-=0.2"
       );
       tl.fromTo(
-        ".hero__heading2",
-        { scale: 1 },
-        { scale: 1, opacity: 1, duration: 2 }
+        ".hero__stat-item",
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.1 },
+        "-=0.1"
       );
-      tl.to(".arrow ", {
-        y: 50,
-        opacity: 1,
-        repeat: -1,
-        yoyo: true,
-        duration: 1,
-      });
     },
     { scope: container }
   );
   return (
     <Bounded>
       <div
-        className="relative -inset-[2px] rounded-3xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-sm"
+        className="relative -inset-[2px] space-y-6 rounded-3xl border border-slate-100/20 bg-slate-200/10 p-4 backdrop-blur-sm sm:space-y-10 sm:p-8 lg:space-y-4"
         ref={container}
       >
         <Navbar />
         <Hero />
-        <h3 className="text-blue-950 mt-5">________________</h3>
         <Services />
         <Hero1 />
-        <h3 className="text-blue-950 mt-5 text-center p-5">________________</h3>
       </div>
     </Bounded>
   );
