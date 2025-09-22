@@ -1,22 +1,60 @@
 import Image from "next/image";
 import React from "react";
 
+const focusAreas = [
+  {
+    title: "AI & Automation",
+    description:
+      "Prototyped assistants that generate storefront copy and reconcile stock data, saving support teams 20+ hours per month.",
+  },
+  {
+    title: "Performance & Accessibility",
+    description:
+      "Ship responsive interfaces that consistently load sub-1.3s on 4G and meet WCAG 2.2 AA, backed by automated Lighthouse and axe audits.",
+  },
+  {
+    title: "Product Strategy",
+    description:
+      "Partner with stakeholders to define KPIs, roadmap experiments, and share insights via talks, documentation, and design reviews.",
+  },
+];
+
 const Hero1 = () => {
   return (
-    <div className="xl:flex xl:justify-center">
-      <h3 className="text-blue-950 tracking-tighter text-end text-xl mr-5 xl:mt-40 mt-5">
-        <span className="font-dirtyline text-5xl">B</span>oost your business
-        with creative yet simple web design and development!
-      </h3>
-      <div className="xl:flex xl:justify-center xl:w-80 xl:h-300">
+    <section
+      aria-labelledby="focus-heading"
+      className="mt-16 grid gap-10 rounded-3xl bg-white/50 p-8 text-blue-950 backdrop-blur-sm lg:grid-cols-[1.1fr_0.9fr]"
+    >
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-500">
+          Strategic focus for 2025
+        </p>
+        <h2
+          id="focus-heading"
+          className="mt-3 text-3xl font-semibold tracking-tight lg:text-4xl"
+        >
+          I blend experimentation and delivery discipline to keep products ahead
+          of market shifts.
+        </h2>
+        <ul className="mt-8 space-y-6 text-sm text-slate-600 sm:text-base">
+          {focusAreas.map(({ title, description }) => (
+            <li key={title} className="rounded-2xl border border-blue-100/60 bg-white/60 p-5">
+              <p className="text-base font-semibold text-blue-900">{title}</p>
+              <p className="mt-2 leading-relaxed text-slate-600">{description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="flex items-center justify-center">
         <Image
           src="/assets/images/boost.svg"
-          alt="business"
-          height={300}
-          width={300}
+          alt="Illustration of growth metrics rising"
+          height={360}
+          width={360}
+          className="h-auto w-64 drop-shadow-2xl sm:w-72 lg:w-80"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

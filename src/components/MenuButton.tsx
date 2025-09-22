@@ -9,16 +9,17 @@ import Link from "next/link";
 
 import React, { useEffect, useState } from "react";
 
-type Link = {
+type NavLink = {
   id: number;
-  link: string;
+  label: string;
+  href: string;
 };
 
 type Props = {
-  link: Link[];
+  links: NavLink[];
 };
 
-const Menu = ({ link }: Props) => {
+const Menu = ({ links }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -67,12 +68,12 @@ const Menu = ({ link }: Props) => {
           </svg>
         </PopoverClose>
         <ol className="space-y-10 text-center data-[state=open]:zoom-in-96 mt-60">
-          {link.map(({ id, link }) => (
+          {links.map(({ id, href, label }) => (
             <li
               key={id}
               className="hover:font-bold p-2 text-2xl drop-shadow-[0_1.2px_1.0px_rgba(0,0,0,0.8)] text-blue-900 font-dirtyline"
             >
-              <Link href={link}>{link}</Link>
+              <Link href={href}>{label}</Link>
             </li>
           ))}
         </ol>
