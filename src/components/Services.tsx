@@ -201,7 +201,7 @@ const Services = () => {
                       height={480}
                       className="h-auto w-full object-cover"
                       unoptimized
-                      onLoadingComplete={() => handleLoading(id)}
+                      onLoad={() => handleLoading(id)}
                     />
                   </Link>
                 </div>

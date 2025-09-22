@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -73,11 +74,11 @@ const Navbar = () => {
           <button
             type="button"
             onClick={() => setIsMobileNavOpen(true)}
-            className="inline-flex h-12 min-w-[3rem] items-center justify-center rounded-full border border-blue-200 px-5 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:hidden"
+            className="inline-flex h-12 min-w-[3rem] items-center justify-center rounded-full border border-blue-200 px-0 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 lg:hidden"
             aria-expanded={isMobileNavOpen}
             aria-controls="mobile-navigation"
           >
-            Browse
+            <Image src={'/assets/svg/hamburger.svg'} alt="hamburger" width={20} height={20} />
           </button>
           <div className="hidden items-center gap-4 lg:flex">
             <Link
@@ -113,7 +114,7 @@ const Navbar = () => {
         aria-label="Primary"
         className="-mx-4 hidden px-4 sm:mx-0 sm:block sm:px-0"
       >
-        <ul className="flex w-max items-center gap-x-4 gap-y-2 text-sm font-semibold text-blue-600 sm:w-full sm:flex-wrap sm:justify-start lg:justify-center">
+        <ul className="flex w-max items-center gap-x-4 gap-y-2 text-sm font-semibold text-blue-600 sm:w-full sm:flex-wrap sm:justify-center lg:justify-center md:justify-center">
           {links.map(({ id, href, label }) => (
             <li key={id} className="whitespace-nowrap">
               <Link
@@ -128,7 +129,7 @@ const Navbar = () => {
       </nav>
       <div className="h-px w-full bg-blue-100" aria-hidden />
       {isMobileNavOpen && (
-        <div className="fixed inset-0 z-50 flex items-start justify-center bg-blue-950/70 px-4 py-10 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-start justify-center px-4 py-10 backdrop-blur-sm">
           <div
             id="mobile-navigation"
             role="dialog"

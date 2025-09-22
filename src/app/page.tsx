@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <Bounded>
       <div
-        className="relative -inset-[2px] space-y-16 rounded-3xl border border-slate-100/20 bg-slate-200/10 p-4 backdrop-blur-sm sm:space-y-20 sm:p-8 lg:space-y-24"
+        className="relative -inset-[2px] space-y-6 rounded-3xl border border-slate-100/20 bg-slate-200/10 p-4 backdrop-blur-sm sm:space-y-10 sm:p-8 lg:space-y-4"
         ref={container}
       >
         <Navbar />

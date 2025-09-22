@@ -44,10 +44,10 @@ const ResumePage = () => {
             ]}
           />
         </div>
-        <section className="px-6 pb-16 text-blue-950">
+        <section className="px-6 mt-10 pb-16 text-blue-950">
           <header className="text-center">
             <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Muhammad Fariz Warman · Front End Engineer
+              Muhamad Fariz Warman · Front End Engineer
             </h1>
             <p className="mt-4 text-sm text-slate-600 sm:text-base">
               Jakarta, Indonesia · Remote-friendly · English & Bahasa Indonesia
