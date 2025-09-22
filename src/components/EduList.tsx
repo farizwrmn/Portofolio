@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Breadcrumbs from "./Breadcrumbs";
 import React from "react";
 
 type Education = {
@@ -78,13 +78,12 @@ const recentLearning: LearningItem[] = [
 const EduList = () => {
   return (
     <section className="px-4 pb-16 text-blue-950">
-      <div className="flex justify-start">
-        <Link href="/">
-          <p className="text-blue-400 tracking-tighter">Home</p>
-        </Link>
-        <p className="ml-2 mr-2 align-center">/</p>
-        <p className="text-blue-950 underline tracking-tighter">Education</p>
-      </div>
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Education" },
+        ]}
+      />
 
       <div className="mt-12 space-y-12">
         {educationHistory.map(({ id, institution, program, timeframe, narrative, highlights }) => (

@@ -1,4 +1,5 @@
 "use client";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Navbar from "@/components/Navbar";
 import BeChart from "@/components/ui/BeChart";
 import CloudChart from "@/components/ui/CloudChart";
@@ -10,7 +11,6 @@ import { useRef } from "react";
 import React from "react";
 import usePrefersReducedMotion from "@/hooks/ReducedMotion";
 import Bounded from "@/components/Bounded";
-import Link from "next/link";
 
 const Page = () => {
   const skillHighlights = [
@@ -104,12 +104,13 @@ const Page = () => {
         ref={container}
       >
         <Navbar />
-        <div className="flex justify-start m-5">
-          <Link href="/">
-            <p className="text-blue-400 tracking-tighter">Home</p>
-          </Link>
-          <p className="ml-2 mr-2 align-center">{"/"}</p>
-          <p className=" text-blue-950 underline tracking-tighter"> Skills</p>
+        <div className="px-4 pb-2 sm:px-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Skills" },
+            ]}
+          />
         </div>
         <h3 className="text-blue-950 text-center m-10 text-2xl tracking-tighter">
           • Area of Expertise •

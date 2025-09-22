@@ -1,4 +1,5 @@
 import Bounded from "@/components/Bounded";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import React from "react";
@@ -35,12 +36,13 @@ const ResumePage = () => {
     <Bounded>
       <div className="w-full rounded-3xl border border-slate-200/40 bg-white/60 backdrop-blur">
         <Navbar />
-        <div className="flex justify-start px-6">
-          <Link href="/">
-            <p className="text-blue-400 tracking-tighter">Home</p>
-          </Link>
-          <p className="mx-2">/</p>
-          <p className="text-blue-950 underline tracking-tighter">Resume</p>
+        <div className="px-6">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Resume" },
+            ]}
+          />
         </div>
         <section className="px-6 pb-16 text-blue-950">
           <header className="text-center">

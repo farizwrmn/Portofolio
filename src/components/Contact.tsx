@@ -68,7 +68,7 @@ const Contact = () => {
 
   return (
     <div
-      className="relative z-10 mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 pb-16 pt-32 text-blue-950"
+      className="relative z-10 mx-auto flex max-w-5xl flex-col items-center gap-10 px-4 pb-16 pt-24 text-blue-950 sm:px-6 sm:pt-28"
       ref={container}
     >
       <div className="text-center">
