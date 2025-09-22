@@ -105,7 +105,7 @@ const Services = () => {
   };
 
   return (
-    <section id="case-studies" className="mt-16">
+    <section id="case-studies" className="mt-20 sm:mt-24">
       <header className="text-center text-blue-950">
         <p className="font-dirtyline text-2xl tracking-[0.3em] text-blue-500">
           Case Studies
@@ -168,12 +168,12 @@ const Services = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+                  <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold">
                     <Link
                       href={link}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full bg-blue-600 px-5 py-2 text-white transition hover:-translate-y-0.5 hover:bg-blue-700"
+                      className="rounded-full bg-blue-600 px-6 py-3 text-white transition hover:-translate-y-0.5 hover:bg-blue-700"
                     >
                       {primaryCtaLabel}
                     </Link>
@@ -181,7 +181,7 @@ const Services = () => {
                       href={linkGithub}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full border border-blue-600 px-5 py-2 text-blue-600 transition hover:-translate-y-0.5 hover:bg-blue-50"
+                      className="rounded-full border border-blue-600 px-6 py-3 text-blue-600 transition hover:-translate-y-0.5 hover:bg-blue-50"
                     >
                       Read the code
                     </Link>

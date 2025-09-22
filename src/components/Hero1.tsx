@@ -23,7 +23,7 @@ const Hero1 = () => {
   return (
     <section
       aria-labelledby="focus-heading"
-      className="mt-16 grid gap-10 rounded-3xl bg-white/50 p-8 text-blue-950 backdrop-blur-sm lg:grid-cols-[1.1fr_0.9fr]"
+      className="mt-20 grid gap-8 rounded-3xl bg-white/50 p-6 text-blue-950 backdrop-blur-sm sm:mt-24 sm:gap-10 sm:p-8 lg:grid-cols-[1.1fr_0.9fr]"
     >
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-500">
