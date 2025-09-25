@@ -101,9 +101,9 @@ const ExperienceList = () => {
           height={400}
         />
       </div>
-      <h3 className="text-blue-950 mt-10 text-center text-sm uppercase tracking-[0.5em]">
+      {/* <h3 className="text-blue-950 mt-10 text-center text-sm uppercase tracking-[0.5em]">
         Keep scrolling for more wins
-      </h3>
+      </h3> */}
     </section>
   );
 };

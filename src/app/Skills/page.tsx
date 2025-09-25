@@ -34,7 +34,7 @@ const Page = () => {
       {
         label: "My Skills",
         data: [50, 60, 70, 60, 65],
-        backgroundColor: ["green", "black", "white", "teal", "turquoise"],
+        backgroundColor: ["green", "black", "skyblue", "teal", "turquoise"],
       },
     ],
   };
@@ -131,13 +131,13 @@ const Page = () => {
             </li>
           ))}
         </ul>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
           <ProChart ProData={ProData} />
           <FeChart FeData={FeData} />
           <BeChart BeData={BeData} />
           <CloudChart CloudData={CloudData} />
         </div>
-        <div className="mt-10 rounded-3xl border border-blue-100/50 bg-white/70 p-6 text-sm text-slate-600 sm:text-base">
+        <div className="mt-20 rounded-3xl border border-blue-100/50 bg-white/70 p-6 text-sm text-slate-600 sm:text-base">
           <h4 className="text-center text-base font-semibold uppercase tracking-[0.3em] text-blue-500">
             Collaboration Toolkit
           </h4>

@@ -129,7 +129,7 @@ const EduList = () => {
             Staying ahead with AI, accessibility, and reliability practices
           </p>
         </div>
-        <ul className="w-full space-y-4 text-sm text-slate-600 sm:text-base">
+        {/* <ul className="w-full space-y-4 text-sm text-slate-600 sm:text-base">
           {recentLearning.map(({ id, title, timeframe, description, focus }) => (
             <li
               key={id}
@@ -144,7 +144,7 @@ const EduList = () => {
               <p className="mt-2 leading-relaxed">{description}</p>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </section>
   );
